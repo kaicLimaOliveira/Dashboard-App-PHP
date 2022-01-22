@@ -42,7 +42,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 **Clone o projeto**
 
 ```bash
-  git clone https://github.com/kaicLimaOliveira/Crud_FlaskMongoDB.git
+  git clone https://github.com/kaicLimaOliveira/Dashboard-App-PHP.git
 ```
 
 ## 📄 Licença
