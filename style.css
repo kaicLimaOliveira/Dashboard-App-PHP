@@ -1,16 +1,17 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    background-color: #ebedef;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ebedef;
+  overflow: hidden;
 }
 
 .main {
-    margin-left: 220px;
-    padding: 15px;
+  margin-left: 220px;
+  padding: 15px;
 }
 
 .nav-side-menu {
-  overflow: auto;
+  overflow: hidden;
   background-color: #2e353d;
   position: fixed;
   top: 0px;
@@ -50,8 +51,8 @@ body {
 }
 
 .nav-side-menu li i.sidebar-icon {
-    margin-right: 0.6rem;
-    font-size: 1.5em;
+  margin-right: 0.6rem;
+  font-size: 1.5em;
 }
 
 .nav-side-menu ul .active,
@@ -81,11 +82,11 @@ body {
 .nav-side-menu li:hover {
   border-left: 3px solid #e1ffff;
   background-color: #4f5b69;
-  -webkit-transition: all .6s ease;
-  -moz-transition: all .6s ease;
-  -o-transition: all .6s ease;
-  -ms-transition: all .6s ease;
-  transition: all .6s ease;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .nav-side-menu ul .sub-menu li.active,
@@ -108,20 +109,62 @@ body {
 }
 
 .nav-side-menu li .sub-menu li a,
-.nav-side-menu ul .sub-menu li a{
-    display: block;
-    padding-left: 20px;
+.nav-side-menu ul .sub-menu li a {
+  display: block;
+  padding-left: 20px;
 }
 
 .nav-side-menu ul .sub-menu li a i,
-.nav-side-menu li .sub-menu li a i{
-    padding-right: 10px !important;
+.nav-side-menu li .sub-menu li a i {
+  padding-right: 10px !important;
 }
+
+.link-doc {
+  padding: 100px;
+  color: #000;
+}
+
+.link-doc:hover {
+  color: #4f5b69;
+  text-shadow: 0.2px 0.2px 0.2px #000;
+  text-decoration: none;
+}
+
+.card-form {
+  display: flex;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.card-form span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+
+  border: 1px solid #4f5b69;
+  border-radius: 10px;
+  height: 10vh;
+  width: 13vw;
+}
+
+.card-form span:hover {
+  opacity: 0.9;
+  filter: brightness(0.8);
+  transition: 0.2s;
+}
+
+.favicon {
+  display: flex;
+  padding: 10px;
+  height: 60px;
+}
+
 @media (max-width: 767px) {
-    .main {
-        margin-left: 0 !important;
-        padding: 0 15px 15px 15px;
-    }
+  .main {
+    margin-left: 0 !important;
+    padding: 0 15px 15px 15px;
+  }
   .nav-side-menu {
     position: relative;
     width: 100%;
