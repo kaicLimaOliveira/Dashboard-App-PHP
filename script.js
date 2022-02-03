@@ -18,35 +18,10 @@ $(document).ready(() => {
         })
     })
 
-    $('#formulario').on('click', () => {
-        $.get('formulario.html', data => {
-            $('body').html(data)
-        })
-    })
-
-    $('#btnSubmit').on('click', e => {
-        e.preventDefault()
-
-
-        let dados = $('#formRegister').serialize()
-        console.log(dados)
-
-        //ajax
-        $.ajax({
-            type: 'GET',
-            url: 'app.php',
-            data: dados,
-            dataType: 'json',
-            success: dados => { console.log(dados) },
-            error: erro => { console.log(erro) }
-        })
-    })
-
-
     //ajax
     $('#competencia').on('change', e => {
 
-        let competencia = $(e.target).val()
+        const competencia = $(e.target).val()
 
         $.ajax({
             type: 'GET',
